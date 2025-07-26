@@ -33,7 +33,7 @@ def query(filename):
     except Exception as e:
         return {"error": str(e)}
 
-filename = input("Enter the path of audio file: ")
+filename = input("Enter the audio file path: ")
 print()
 output = query(filename)
 
