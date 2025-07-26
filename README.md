@@ -21,3 +21,13 @@ Install the dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## 🏁 How to Run
+
+1. **Download / clone**
+   ```bash
+   git clone https://github.com/yourusername/sentiment-analyzer.git
+   cd sentiment-analyzer
+   ```
