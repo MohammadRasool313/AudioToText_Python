@@ -36,11 +36,11 @@ pip install -r requirements.txt
 
 3. Enter the path of your audio file. Note that you must include the extension.
 
-```
+---
 
 ## 🧪 Example
 
-```bash
+```
 Enter the audio file path: test.wav
 
 Transcription: hello im rasool and this is a test voice
