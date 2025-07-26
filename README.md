@@ -24,7 +24,7 @@ pip install requests
 ```
 
 An API key from the Hugging Face website that must be placed in the code.
-
+https://huggingface.co/settings/tokens
 ! Make sure the API key has the necessary permissions, such as read access.
 
 ---
