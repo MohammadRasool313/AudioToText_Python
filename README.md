@@ -23,6 +23,10 @@ Install the dependencies using:
 pip install requests
 ```
 
+An API key from the Hugging Face website that must be placed in the code.
+
+! Make sure the API key has the necessary permissions, such as read access.
+
 ---
 
 ## 🏁 How to Run
