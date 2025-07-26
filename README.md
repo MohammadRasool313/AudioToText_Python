@@ -13,6 +13,12 @@ A Python program that can convert voice to text using the **Whisper-large-v3** a
 
 ---
 
+## 🎬 Demo
+
+[![Watch the video](https://img.youtube.com/vi/CH5A-6afRy4/0.jpg)](https://www.youtube.com/watch?v=CH5A-6afRy4)
+
+---
+
 ## ⚙️ Requirements
 
 Python 3.8 or later
