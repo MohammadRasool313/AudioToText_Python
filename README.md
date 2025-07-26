@@ -38,12 +38,6 @@ pip install -r requirements.txt
 
 ```
 
-## 📄 License
-
-MIT © [MR313](https://github.com/MohammadRasool313)
-
----
-
 ## 🧪 Example
 
 ```bash
@@ -52,3 +46,10 @@ Enter the audio file path: test.wav
 Transcription: hello im rasool and this is a test voice
 
 Saved in the file output.txt
+```
+
+```
+
+## 📄 License
+
+MIT © [MR313](https://github.com/MohammadRasool313)
