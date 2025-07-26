@@ -36,6 +36,11 @@ pip install -r requirements.txt
 
 3. Enter the path of your audio file. Note that you must include the extension.
 
+```
+
+## 📄 License
+
+MIT © [MR313](https://github.com/MohammadRasool313)
 
 ---
 
