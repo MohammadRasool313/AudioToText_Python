@@ -44,6 +44,6 @@ else:
     with open('output.txt', 'w', encoding='utf-8') as file:
         file.write(str(output.get("text", "No text found")))
     print()
-    print("Saved in output.txt file")    
+    print("Saved in the file output.txt")    
 
 input()
