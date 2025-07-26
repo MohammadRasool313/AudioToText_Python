@@ -34,6 +34,7 @@ def query(filename):
         return {"error": str(e)}
 
 filename = input("Enter the path of audio file: ")
+print()
 output = query(filename)
 
 if "error" in output:
@@ -42,6 +43,7 @@ else:
     print("Transcription:", output.get("text", "No text found"))
     with open('output.txt', 'w', encoding='utf-8') as file:
         file.write(str(output.get("text", "No text found")))
+    print()
     print("Saved in output.txt file")    
 
 input()
