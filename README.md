@@ -42,5 +42,8 @@ pip install -r requirements.txt
 ## 🧪 Example
 
 ```bash
-Enter the path of audio file: test.wav
+Enter the audio file path: test.wav
 
+Transcription: hello im rasool and this is a test voice
+
+Saved in the file output.txt
