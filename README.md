@@ -5,6 +5,7 @@ A Python program that can convert voice to text using the **Whisper-large-v3** a
 
 ## ✨ Features
 
+- Support for more than 100 different languages
 - Simple user interface
 - No need for powerful graphics and hardware
 - Fast
