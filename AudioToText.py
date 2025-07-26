@@ -2,15 +2,15 @@ import os
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3"
-headers = {"Authorization": "Bearer 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"}  # جایگزین با API Key واقعی
+headers = {"Authorization": "Bearer hf_xxxxxxxxxxx"}  # Replace with the actual API key
 
 def query(filename):
     try:
-        # بررسی وجود فایل
+        # File existence check
         if not os.path.exists(filename):
             raise FileNotFoundError(f"File {filename} not found!")
         
-        # تشخیص خودکار فرمت فایل
+        # Automatic file format detection
         file_ext = os.path.splitext(filename)[1].lower().lstrip('.')
         content_type = f"audio/{file_ext}" if file_ext in ['flac', 'wav', 'mp3', 'ogg'] else "audio/*"
         
@@ -23,7 +23,7 @@ def query(filename):
             data=data
         )
         
-        # بررسی پاسخ API
+        # API response review
         if response.status_code != 200:
             error_msg = response.json().get("error", "Unknown error")
             raise Exception(f"API Error ({response.status_code}): {error_msg}")
