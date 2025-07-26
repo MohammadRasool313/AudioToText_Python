@@ -38,3 +38,9 @@ pip install -r requirements.txt
 
 
 ---
+
+## 🧪 Example
+
+```bash
+Enter the path of audio file: test.wav
+
