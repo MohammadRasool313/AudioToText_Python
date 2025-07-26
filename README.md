@@ -28,6 +28,9 @@ pip install -r requirements.txt
 
 1. **Download / clone**
    ```bash
-   git clone https://github.com/yourusername/sentiment-analyzer.git
-   cd sentiment-analyzer
+   git clone https://github.com/MohammadRasool313/AudioToText_Python.git
+   cd AudioToText_Python
    ```
+2. Double click AudioToText.py
+
+3. Enter the path of your audio file. Note that you must include the extension.
