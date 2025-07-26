@@ -34,3 +34,6 @@ pip install -r requirements.txt
 2. Double click AudioToText.py
 
 3. Enter the path of your audio file. Note that you must include the extension.
+
+
+---
