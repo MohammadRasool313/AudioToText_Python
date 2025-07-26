@@ -11,3 +11,13 @@ A Python program that can convert voice to text using the **Whisper-large-v3** a
 - Fast
 
 ---
+
+## ⚙️ Requirements
+
+Python 3.8 or later
+
+Install the dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
