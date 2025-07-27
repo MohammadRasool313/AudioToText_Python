@@ -1,12 +1,13 @@
 import os
 import requests
+import argparse
 
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3"
-headers = {"Authorization": "Bearer hf_xxxxxxxxxxx"}  # Replace with the actual API key
+headers = {"Authorization": "Bearer hf_xxxxxxxxxxx"}  # Replace with your actual API key
 
 def query(filename):
     try:
-        # File existence check
+        # Check if file exists
         if not os.path.exists(filename):
             raise FileNotFoundError(f"File {filename} not found!")
         
@@ -23,7 +24,7 @@ def query(filename):
             data=data
         )
         
-        # API response review
+        # Check API response
         if response.status_code != 200:
             error_msg = response.json().get("error", "Unknown error")
             raise Exception(f"API Error ({response.status_code}): {error_msg}")
@@ -33,17 +34,28 @@ def query(filename):
     except Exception as e:
         return {"error": str(e)}
 
-filename = input("Enter the audio file path: ")
-print()
-output = query(filename)
+def main():
+    parser = argparse.ArgumentParser(description='Convert speech to text using Whisper API')
+    parser.add_argument('-i', '--input', required=True, help='Path to input audio file')
+    parser.add_argument('-o', '--output', default='output.txt', help='Path to output text file (default: output.txt)')
+    
+    args = parser.parse_args()
+    
+    output = query(args.input)
 
-if "error" in output:
-    print("Error:", output["error"])
-else:
-    print("Transcription:", output.get("text", "No text found"))
-    with open('output.txt', 'w', encoding='utf-8') as file:
-        file.write(str(output.get("text", "No text found")))
-    print()
-    print("Saved in the file output.txt")    
+    if "error" in output:
+        print("Error:", output["error"])
+    else:
+        transcription = output.get("text", "No text found")
+        print("Transcription:", transcription)
+        
+        try:
+            with open(args.output, 'w', encoding='utf-8') as file:
+                file.write(transcription)
+            print(f"\nResult saved to: {args.output}")
+        except Exception as e:
+            print(f"Error saving file: {str(e)}")
 
-input()
+if __name__ == '__main__':
+    main()
+    input("Press Enter to exit...")  # To prevent window from closing immediately on Windows
