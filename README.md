@@ -42,20 +42,18 @@ https://huggingface.co/settings/tokens
    git clone https://github.com/MohammadRasool313/AudioToText_Python.git
    cd AudioToText_Python
    ```
-2. Double click AudioToText.py
-
-3. Enter the path of your audio file. Note that you must include the extension.
+2. Open cmd and write AudioToText.py -i path/to/audio -o path/to/save
 
 ---
 
 ## 🧪 Example
 
 ```
-Enter the audio file path: test.wav
+AudioToText.py -i test.wav -o test.txt
 
 Transcription: hello im rasool and this is a test voice
 
-Saved in the file output.txt
+Saved in the file test.txt
 ```
 
 ---
